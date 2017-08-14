@@ -23,10 +23,15 @@ public class AppSelectTitularesComDao {
         //Pega todos os titulares do banco
         List<Titular> titulares = dao.listarTudo();
         
-        //TODO: Configurar espaçamento entre os campos
+        int maior = 0;
+        for(Titular t: titulares){
+            if(t.getNome().length()>maior){
+                maior = t.getNome().length();
+            }
+        }
         for(Titular t: titulares){
             System.out.print("Numero: "+t.getNro_titular() + " - ");
-            System.out.print("Nome: "+t.getNome()+" - ");
+            System.out.printf("Nome: %-"+maior+"s - ",t.getNome());
             System.out.print("CPF: "+t.getCpf()+" - ");
             System.out.println("RG: "+t.getRg());
         }
