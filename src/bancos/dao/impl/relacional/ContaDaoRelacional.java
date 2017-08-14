@@ -4,16 +4,13 @@ import banco.dao.api.ContaDaoInterface;
 import banco.dominio.Conta;
 import java.math.BigDecimal;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
- * @author osniellopesteixeira e helder
+ * @author Osniel Teixeira e Helder
  */
 public class ContaDaoRelacional implements ContaDaoInterface {
     

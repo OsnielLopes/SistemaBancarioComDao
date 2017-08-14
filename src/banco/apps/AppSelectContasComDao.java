@@ -21,8 +21,8 @@ public class AppSelectContasComDao {
         List<Conta> todasContas;
         todasContas = dao.listarTudo();
         for (Conta c: todasContas){
-            System.out.println("Nro: " + c.getNumero());
-            System.out.println(" - ");
+            System.out.print("Nro: " + c.getNumero());
+            System.out.print(" - ");
             System.out.println("Saldo: R$ " + c.getSaldo());
         }
         conexao.close();
